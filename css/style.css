@@ -1,0 +1,36 @@
+:root{--cream:#f6f0e4;--white:#fff;--ink:#1d1b16;--mute:#5f5a4d;--accent:#1f4d3a;--accent-ink:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.65 "Newsreader",Georgia,serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+nav{padding:24px 0;font:600 15px "Instrument Sans",Arial,sans-serif}
+nav a{margin-right:20px;color:var(--ink);text-decoration:none;display:inline-block}
+nav a:hover{color:var(--accent);text-decoration:underline}
+header{display:flex;gap:36px;align-items:center;padding:48px 0 40px;flex-wrap:wrap}
+.photo{width:190px;height:190px;border-radius:50%;background:var(--white);flex:none;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:clamp(2.4rem,7vw,3.8rem);line-height:1.05;margin:0 0 12px;font-weight:600;letter-spacing:-.02em}
+.lead{color:var(--mute);margin:0 0 20px;max-width:48ch}
+.btn{display:inline-block;font:600 15px "Instrument Sans",Arial,sans-serif;padding:11px 20px;background:var(--accent);color:var(--accent-ink);text-decoration:none;border-radius:6px}
+.btn:hover{opacity:.88}
+section{padding:36px 0}
+h2{font-size:1.9rem;margin:0 0 20px;font-weight:600;letter-spacing:-.01em}
+h3.sub{margin:28px 0 12px;font-size:1.2rem}
+.panel{background:var(--white);border-radius:14px;padding:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--white);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.card[hidden]{display:none}
+.card h3{font-size:1.15rem;margin:0;font-weight:600}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.card p{margin:0;color:var(--mute);font-size:16px;flex:1}
+.meta{font:400 13px "Instrument Sans",Arial,sans-serif;color:var(--accent)}
+.note{color:var(--mute)}
+.more{margin-top:20px;font:600 15px "Instrument Sans",Arial,sans-serif;padding:11px 20px;background:var(--white);color:var(--accent);border:2px solid var(--accent);border-radius:6px;cursor:pointer}
+.more:hover{background:var(--accent);color:var(--accent-ink)}
+.more[hidden]{display:none}
+.links{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px 28px;font:600 16px "Instrument Sans",Arial,sans-serif}
+footer{padding:32px 0 64px;color:var(--mute);font:400 14px "Instrument Sans",Arial,sans-serif}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
